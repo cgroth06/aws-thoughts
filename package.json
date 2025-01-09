@@ -1,22 +1,19 @@
 {
-  "name": "aws-thought",
+  "name": "starter",
   "version": "1.0.0",
-  "description": "",
-  "main": "server/server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "cd server && npm start",
-    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-    "install": "cd server && npm i && cd ../client && npm i",
-    "build": "cd client && npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "aws-thoughts.git"
+  },
+  "author": "Chris Groth",
+  "license": "MIT",
+  "description": "",
   "dependencies": {
-    "if-env": "^1.0.4"
-  },
-  "devDependencies": {
-    "concurrently": "^5.1.0"
+    "aws-sdk": "^2.1692.0",
+    "uuid": "^11.0.4"
   }
 }
